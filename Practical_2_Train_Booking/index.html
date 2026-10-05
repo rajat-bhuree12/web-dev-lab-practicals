@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking System</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Book Train Ticket</h2>
+        
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="from">From Station:</label>
+                <input type="text" id="from" name="from" placeholder="Enter departure station" required>
+            </div>
+
+            <div class="input-group">
+                <label for="to">To Station:</label>
+                <input type="text" id="to" name="to" placeholder="Enter destination station[
+                -]
+                ]" required>
+            </div>
+
+            <div class="input-group">
+                <label for="date">Journey Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="input-group">
+                <label for="class">Travel Class:</label>
+                <select id="class" name="class" required>
+                    <option value="">Select Class</option>
+                    <option value="sl">Sleeper (SL)</option>
+                    <option value="3a">AC 3 Tier (3A)</option>
+                    <option value="2a">AC 2 Tier (2A)</option>
+                    <option value="1a">AC 1st Class (1A)</option>
+                    <option value="cc">AC Chair Car (CC)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="quota">Quota:</label>
+                <select id="quota" name="quota">
+                    <option value="gn">General (GN)</option>
+                    <option value="tq">Tatkal (TQ)</option>
+                    <option value="ld">Ladies (LD)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="passengers">No. of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="6" value="1" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Search Trains</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Demo</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        .internal-style {
+            background-color: #e0f7fa;
+            border: 2px solid #0097a7;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="../Practical_1_Basic_HTML/video.mp4" type="video/mp4">
+    </video>
+    <div class="external-style">
+        <h2>External CSS Applied</h2>
+        <p>This container is styled using an external stylesheet (style.css).</p>
+    </div>
+
+    <div class="internal-style">
+        <h2>Internal CSS Applied</h2>
+        <p>This container is styled using internal CSS defined in the &lt;style&gt; block of this HTML file.</p>
+    </div>
+
+    <!-- Inline CSS -->
+    <div style="background-color: #fff3e0; border: 2px dashed #e65100; padding: 20px; margin-top: 20px; border-radius: 5px; text-align: center;">
+        <h2 style="color: #e65100;">Inline CSS Applied</h2>
+        <p style="font-style: italic;">This container is styled using inline CSS directly within the HTML tags.</p>
+    </div>
+</body>
+</html>
